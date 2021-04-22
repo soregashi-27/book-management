@@ -1,3 +1,8 @@
+<?php 
+require_once("../book-management/php/component.php")
+
+?>
+
 <!DOCTYPE html>
 <html lang="js">
 
@@ -31,7 +36,7 @@
                         </div>
                     </div>
                     <div class="pt-2">
-
+                        <?php inputElement(); ?>
                     </div>
                 </form>
             </div>
