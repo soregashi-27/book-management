@@ -35,15 +35,18 @@ require_once("../book-management/php/component.php")
                     <div class="row pt-2">
                         <div class="col">
                             <?php inputElement("<i class='fas fa-people-carry'></i>", "Publisher", "book_publisher", ""); ?>
-
                         </div>
                         <div class="col">
                             <?php inputElement("<i class='fas fa-dollar-sign'></i>", "Price", "book_price", ""); ?>
                         </div>
-                        <div class="d-flex">
-
-                        </div>
                     </div>
+                    <div class="d-flex">
+                        <?php buttonElement("btn-create", "btn btn-success", "<i class='fas fa-plus'></i>", "crate", "data-toggle='tooltip' data-placement='bottom' title='Create'" ); ?>
+                        <?php buttonElement("btn-read", "btn btn-primary", "<i class='fas fa-sync'></i>", "read", "data-toggle='tooltip' data-placement='bottom' title='Read'" ); ?>
+                        <?php buttonElement("btn-update", "btn btn-light border", "<i class='fas fa-pen-alt'></i>", "update", "data-toggle='tooltip' data-placement='bottom' title='Update'" ); ?>
+                        <?php buttonElement("btn-update", "btn btn-danger", "<i class='fas fa-trash-alt'></i>", "delete", "data-toggle='tooltip' data-placement='bottom' title='Delete'" ); ?>
+                    </div>
+
                 </form>
             </div>
 
